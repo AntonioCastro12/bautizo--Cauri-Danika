@@ -16,7 +16,7 @@ const places = [
   {
     icon: '♕',
     label: 'Recepción · 6:00 p. m.',
-    name: 'Salon Recepción',
+    name: 'Salon',
     address: 'Calle Puente Juan Carbonero 330 Ex Ejidos de la Magdalena Mixihuca 08010 Iztacalco, CDMX México',
     map: 'https://maps.app.goo.gl/rcDLShsVMRuiJdES9',
   },
@@ -231,8 +231,8 @@ export default function Home() {
 
           <div className="date-row">
             <div className="date-circle">
-              <span>NOV</span>
-              <strong>14</strong>
+              <span>Octubre</span>
+              <strong>3</strong>
             </div>
             <div className="date-text">
               <strong>Sábado</strong>
