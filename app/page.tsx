@@ -3,7 +3,7 @@
 import type { CSSProperties, FormEvent, PointerEvent as ReactPointerEvent } from 'react';
 import { useEffect, useRef, useState } from 'react';
 
-const EVENT_DATE = new Date('2026-11-14T11:00:00-06:00').getTime();
+const EVENT_DATE = new Date('2026-10-03T11:00:00-04:00').getTime();
 
 const places = [
   {
