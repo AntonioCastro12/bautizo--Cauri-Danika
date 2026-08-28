@@ -8,42 +8,42 @@ const EVENT_DATE = new Date('2026-11-14T11:00:00-06:00').getTime();
 const places = [
   {
     icon: '✝',
-    label: 'Ceremonia · 11:00 a. m.',
-    name: 'Parroquia Nuestra Señora de la Paz',
-    address: 'Av. Principal 123, Col. Centro',
-    map: 'https://www.google.com/maps/search/?api=1&query=Parroquia+Nuestra+Señora+de+la+Paz',
+    label: 'Ceremonia · 4:00 p. m.',
+    name: 'Parroquia Nuestra Señora de los dolores',
+    address: 'Calle Puente Juan Carbonero 330 Ex Ejidos de la Magdalena Mixihuca 08010 Iztacalco, CDMX México',
+    map: 'https://maps.app.goo.gl/NpeQETsQSd8VNsVg7',
   },
   {
     icon: '♕',
-    label: 'Recepción · 1:00 p. m.',
-    name: 'Jardín Las Rosas',
-    address: 'Calle del Lago 45, Col. Jardines',
-    map: 'https://www.google.com/maps/search/?api=1&query=Jardin+Las+Rosas',
+    label: 'Recepción · 6:00 p. m.',
+    name: 'Salon Recepción',
+    address: 'Calle Puente Juan Carbonero 330 Ex Ejidos de la Magdalena Mixihuca 08010 Iztacalco, CDMX México',
+    map: 'https://maps.app.goo.gl/rcDLShsVMRuiJdES9',
   },
 ];
 
 const godparents = [
   {
     icon: "🤍",
-    role: "Padrinos de bautizo",
-    name: "Juan Pérez & María López"
+    role: "Padrino",
+    name: "David Arturo Garcia Martinez"
   },
-  {
-    icon: "✨",
-    role: "Padrinos de vela",
-    name: "Carlos & Fernanda"
-  }
+  // {
+  //   icon: "✨",
+  //   role: "Padrinos de vela",
+  //   name: "Carlos & Fernanda"
+  // }
 ];
 const myParents = [
   {
     icon: "🤵🏻",
     role: "Padre",
-    name: "Juan Pérez Lagos"
+    name: "Kevin Francisco Mendiola Reyes"
   },
   {
     icon: "👸🏻",
     role: "Mamá",
-    name: "Fernanda Juarez"
+    name: "Frida Sarahi Aguilar Sanchez"
   }
 ];
 function getCountdown() {
@@ -107,13 +107,13 @@ export default function Home() {
   };
 
   const shareInvitation = () => {
-    const message = `Acompáñanos a celebrar el bautizo de Valentina.\n${window.location.href}`;
+    const message = `Acompáñanos a celebrar el bautizo de Cauri Danika.\n${window.location.href}`;
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
   };
 
   const sendWish = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const message = `Un deseo para Valentina ♡\n${wishName || 'Un invitado'}: ${wishMessage || 'Que Dios te bendiga siempre.'}`;
+    const message = `Un deseo para Cauri Danika  ♡\n${wishName || 'Un invitado'}: ${wishMessage || 'Que Dios te bendiga siempre.'}`;
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
     setNotice('Tu mensaje está listo en WhatsApp');
   };
@@ -163,7 +163,7 @@ export default function Home() {
             <span className="cover-title-panel">
               <small>Una invitación muy especial</small>
               <strong>Mi Bautizo</strong>
-              <em>Valentina</em>
+              <em>Cauri Danika</em>
               <span className="tap-to-open">
                 <i aria-hidden="true">♡</i>
                 Toca para abrir
@@ -213,7 +213,7 @@ export default function Home() {
             <div className="gold-divider" aria-hidden="true"><span />✝<span /></div>
             <p>Acompáñanos a celebrar mi</p>
             <h1 id="invitation-title">Bautizo</h1>
-            <h2>Valentina</h2>
+            <h2>Cauri Danika </h2>
             <p className="hero-message">
               Un día bendecido, rodeada del amor de mi familia y de las personas que más quiero.
             </p>
@@ -331,7 +331,7 @@ export default function Home() {
 
         <section className="wish-section reveal-section" aria-labelledby="wish-title">
           <span className="eyebrow">Un detalle especial</span>
-          <h2 id="wish-title">Deja un deseo para Valentina</h2>
+          <h2 id="wish-title">Deja un deseo para Cauri Danika.</h2>
           <p>Escribe unas palabras bonitas y las prepararemos para enviarlas por WhatsApp.</p>
 
           <form onSubmit={sendWish}>
