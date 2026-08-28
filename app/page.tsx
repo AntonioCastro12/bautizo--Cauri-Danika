@@ -18,7 +18,7 @@ const places = [
     label: 'Recepción · 6:00 p. m.',
     name: 'Salon',
     address: 'Calle 11 de Agosto de 1859, Mz 88 Lt 901B Leyes de Reforma 3ra. Sección 09310 Iztapalapa, CDMXMéxico',
-    map: 'https://maps.app.goo.gl/kApD6vMfTA7uygKT7',
+    map: 'https://maps.app.goo.gl/faW3iX3iJFF3gooW7',
   },
 ];
 
